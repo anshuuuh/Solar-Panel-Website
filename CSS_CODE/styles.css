@@ -1,0 +1,70 @@
+/* Product Section */
+.product-section {
+    background-color: #fff;
+    padding: 50px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General Styles */
+.container-2 {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container-2  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Expertise Section */
+.expertise-01 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.expertise-01 p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.expertise-01 div {
+    font-size: 14px;
+    color: #444;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px 0;
+    text-align: center;
+}
+.team-card {
+    transition: transform 0.3s ease-in-out;
+}
+.team-card:hover {
+    transform: translateY(-10px);
+}
+.team-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto;
+}
