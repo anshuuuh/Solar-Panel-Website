@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar-Panels</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<style>
+    /* Footer Styling */
+    .footer {
+        width: 100%;
+        background-color: #000;
+        /* Black background */
+        color: #fff;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        margin-top: 25px;
+    }
+
+    /* Footer Container */
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Footer Sections */
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    /* Footer Headings */
+    .footer h3 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #f0f0f0;
+    }
+
+    /* Footer Links */
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 5px;
+    }
+
+    .footer-links a {
+        text-decoration: none !important;
+        /* No underline */
+        color: #fff !important;
+        /* White text */
+    }
+
+    .footer-links a:hover {
+        color: #ffcc00 !important;
+        /* Yellow on hover */
+    }
+
+    /* Social Icons */
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        color: #ccc;
+        font-size: 20px;
+    }
+
+    .social-icons a:hover {
+        color: #ffcc00;
+    }
+
+    /* Footer Bottom Section */
+    .footer-bottom {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+        color: #777;
+    }
+
+    .footer-bottom a {
+        color: #fff !important;
+        /* White text */
+        margin: 0 5px;
+        text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+        color: #ffcc00 !important;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .footer-container {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .footer-section {
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section {
+            text-align: center;
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .social-icons a {
+            font-size: 18px;
+        }
+
+        .footer-bottom p {
+            font-size: 11px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Leadership</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Our Commitment</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="TapiR.html">Tapi R</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="TapiTrans.html">Tapi Trans</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="TapiSeries.html">Tapi Series</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="TapiBlack.html">Tapi Black</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="Ganga.html">Ganga</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">EPC</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Case Studies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Investors</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Events</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">News & Media</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Blogs</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="img/HI_01.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/HI_02.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/HI_03.webp" class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/HI_04.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/HI_05.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="img/HI_06.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+
+    <section class="container py-5 d-flex flex-column flex-md-row align-items-center">
+        <!-- Left Section -->
+        <div class="col-md-6 text-center text-md-start">
+            <video class="elementor-video img-fluid"
+                src="https://solex.in/wp-content/uploads/2025/03/Solex_30-Years-Final-Logo_For-Video_Jan25-1.mp4"
+                autoplay loop muted playsinline controlslist="nodownload"
+                poster="https://solex.in/wp-content/uploads/2025/03/Screenshot-2025-03-11-082320.png"
+                style="max-width: 300px; height: 200px;"></video>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col-md-6">
+            <h2 class="fw-bold">About Solar Panels</h2>
+            <p class="text-muted">
+                <strong>At Solar Energy Limited</strong>, we are dedicated to leading the renewable energy sector by
+                harnessing the power of solar to build a greener world. Specializing in sustainable, cost-effective
+                solutions for residential, commercial, and industrial clients, we combine innovation with advanced
+                technologies to drive global zero-carbon development.
+            </p>
+
+            <div class="row text-center">
+                <div class="col-6 col-md-3">
+                    <p class="fs-3 fw-bold">30</p>
+                    <p class="text-muted">Years of Experience</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p class="fs-3 fw-bold">10,000</p>
+                    <p class="text-muted">Successful Projects</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p class="fs-3 fw-bold">2 M+</p>
+                    <p class="text-muted">Modules Shipped</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p class="fs-3 fw-bold">1.5 GW</p>
+                    <p class="text-muted">PV Modules Manufacturing Capacity</p>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-outline-warning mt-3">Know More →</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container product-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold">Our Products</h2>
+                <p class="text-muted">Tapi R</p>
+                <h4 class="fw-bold">N-Type TOPCON Technology</h4>
+                <p>595 – 625 W</p>
+                <p><strong>Product Warranty:</strong> 12 Years</p>
+                <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                <p><strong>Module Efficiency:</strong> 23.14%</p>
+                <p>132 Half Cut Cell</p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal1">Know More
+                    <span>&#10148;</span></button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tapi R Modal -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">Tapi R - Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid mb-3">
+                    <h4 class="fw-bold">N-Type TOPCON Technology</h4>
+                    <p>595 – 625 W</p>
+                    <p><strong>Product Warranty:</strong> 12 Years</p>
+                    <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                    <p><strong>Module Efficiency:</strong> 23.14%</p>
+                    <p>132 Half Cut Cell</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Capacity rating – Pmax (Wp)</th>
+                                <th scope="col">690</th>
+                                <th scope="col">695</th>
+                                <th scope="col">700</th>
+                                <th scope="col">750</th>
+                                <th scope="col">800</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Power Tolerance (Wp)</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                            </tr>
+                            <tr>
+                                <td>Open circuit voltage - Voc(V)</td>
+                                <td>51.40</td>
+                                <td>51.50</td>
+                                <td>51.60</td>
+                                <td>51.70</td>
+                                <td>51.80</td>
+                            </tr>
+                            <tr>
+                                <td>Short circuit current - Isc(A)</td>
+                                <td>13.80</td>
+                                <td>13.87</td>
+                                <td>13.95</td>
+                                <td>14.02</td>
+                                <td>14.10</td>
+                            </tr>
+                            <tr>
+                                <td>Rated voltage - Vmp(V)</td>
+                                <td>45.07</td>
+                                <td>45.15</td>
+                                <td>45.22</td>
+                                <td>45.30</td>
+                                <td>45.37</td>
+                            </tr>
+                            <tr>
+                                <td>Rated current - Imp(A)</td>
+                                <td>13.10</td>
+                                <td>13.18</td>
+                                <td>13.27</td>
+                                <td>13.36</td>
+                                <td>13.45</td>
+                            </tr>
+                            <tr>
+                                <td>Module efficiency (%)</td>
+                                <td>22.84</td>
+                                <td>23.03</td>
+                                <td>23.23</td>
+                                <td>23.42</td>
+                                <td>23.61</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container product-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-muted">Tapi Trans</p>
+                <h4 class="fw-bold">N-Type Dual Glass Module</h4>
+                <p>560 – 590 W</p>
+                <p><strong>Product Warranty:</strong> 12 Years</p>
+                <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                <p><strong>Module Efficiency:</strong> 23.83%</p>
+                <p>144 Half Cut Cell</p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal2">Know More
+                    <span>&#10148;</span></button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal2" tabindex="0" aria-labelledby="productModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Tapi Trans - Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid mb-3">
+                    <h4 class="fw-bold">N-Type Dual Glass Module</h4>
+                    <p>560 – 590 W</p>
+                    <p><strong>Product Warranty:</strong> 12 Years</p>
+                    <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                    <p><strong>Module Efficiency:</strong> 23.83%</p>
+                    <p>144 Half Cut Cell</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">MODULE TYPE</th>
+                                <th scope="col">560</th>
+                                <th scope="col">565</th>
+                                <th scope="col">570</th>
+                                <th scope="col">575</th>
+                                <th scope="col">580</th>
+                                <th scope="col">585</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Capacity rating – Pmax (Wp)</td>
+                                <td>560</td>
+                                <td>565</td>
+                                <td>570</td>
+                                <td>575</td>
+                                <td>580</td>
+                                <td>585</td>
+                            </tr>
+                            <tr>
+                                <td>Power Tolerance (Wp)</td>
+                                <td>0–4.99</td>
+                                <td>0–4.99</td>
+                                <td>0–4.99</td>
+                                <td>0–4.99</td>
+                                <td>0–4.99</td>
+                                <td>0–4.99</td>
+                            </tr>
+                            <tr>
+                                <td>Open circuit voltage – Voc(V)</td>
+                                <td>50.68</td>
+                                <td>50.88</td>
+                                <td>51.08</td>
+                                <td>51.28</td>
+                                <td>51.48</td>
+                                <td>51.68</td>
+                            </tr>
+                            <tr>
+                                <td>Short circuit current – Isc(A)</td>
+                                <td>14.12</td>
+                                <td>14.18</td>
+                                <td>14.24</td>
+                                <td>14.3</td>
+                                <td>14.13</td>
+                                <td>14.13</td>
+                            </tr>
+                            <tr>
+                                <td>Rated voltage – Vmp(V)</td>
+                                <td>42.4</td>
+                                <td>42.6</td>
+                                <td>42.8</td>
+                                <td>43</td>
+                                <td>43.2</td>
+                                <td>43.4</td>
+                            </tr>
+                            <tr>
+                                <td>Rated current – Imp(A)</td>
+                                <td>13.22</td>
+                                <td>13.27</td>
+                                <td>13.32</td>
+                                <td>13.38</td>
+                                <td>13.43</td>
+                                <td>13.48</td>
+                            </tr>
+                            <tr>
+                                <td>Module efficiency (%)</td>
+                                <td>21.68</td>
+                                <td>21.87</td>
+                                <td>22.07</td>
+                                <td>22.26</td>
+                                <td>22.45</td>
+                                <td>22.65</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container product-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-muted">Tapi Series</p>
+                <h4 class="fw-bold">Monocrystalline / Bi-Facial Monocrystalline</h4>
+                <p>530 – 555 W</p>
+                <p><strong>Product Warranty:</strong> 12 Years</p>
+                <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                <p><strong>Module Efficiency:</strong> 21.48%</p>
+                <p>144 Half Cut Cell</p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal3">Know More
+                    <span>&#10148;</span></button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Tapi Series - Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid mb-3">
+                    <h4 class="fw-bold">Monocrystalline / Bi-Facial Monocrystalline</h4>
+                    <p>530 – 555 W</p>
+                    <p><strong>Product Warranty:</strong> 12 Years</p>
+                    <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                    <p><strong>Module Efficiency:</strong> 21.48%</p>
+                    <p>144 Half Cut Cell</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">MODULE TYPE</th>
+                                <th scope="col">530</th>
+                                <th scope="col">535</th>
+                                <th scope="col">540</th>
+                                <th scope="col">545</th>
+                                <th scope="col">550</th>
+                                <th scope="col">555</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Capacity rating – Pmax (Wp)</td>
+                                <td>530</td>
+                                <td>535</td>
+                                <td>540</td>
+                                <td>545</td>
+                                <td>550</td>
+                                <td>555</td>
+                            </tr>
+                            <tr>
+                                <td>Power Tolerance (Wp)</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                            </tr>
+                            <tr>
+                                <td>Open circuit voltage – Voc(V)</td>
+                                <td>49.45</td>
+                                <td>49.58</td>
+                                <td>49.71</td>
+                                <td>49.84</td>
+                                <td>49.97</td>
+                                <td>50.1</td>
+                            </tr>
+                            <tr>
+                                <td>Short circuit current – Isc(A)</td>
+                                <td>13.43</td>
+                                <td>13.51</td>
+                                <td>13.59</td>
+                                <td>13.67</td>
+                                <td>13.75</td>
+                                <td>13.83</td>
+                            </tr>
+                            <tr>
+                                <td>Rated voltage – Vmp(V)</td>
+                                <td>41.54</td>
+                                <td>41.67</td>
+                                <td>41.8</td>
+                                <td>41.93</td>
+                                <td>42.06</td>
+                                <td>42.19</td>
+                            </tr>
+                            <tr>
+                                <td>Rated current – Imp(A)</td>
+                                <td>12.76</td>
+                                <td>12.84</td>
+                                <td>12.92</td>
+                                <td>13</td>
+                                <td>13.08</td>
+                                <td>13.16</td>
+                            </tr>
+                            <tr>
+                                <td>Module efficiency (%)</td>
+                                <td>20.52</td>
+                                <td>20.71</td>
+                                <td>20.91</td>
+                                <td>21.1</td>
+                                <td>21.3</td>
+                                <td>21.49</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container product-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-muted">Tapi Black</p>
+                <h4 class="fw-bold">All Black Monocrystalline / Bi-Facial Monocrystalline</h4>
+                <p>400 – 420 W</p>
+                <p><strong>Product Warranty:</strong> 12 Years</p>
+                <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                <p><strong>Module Efficiency:</strong> 21.50%</p>
+                <p>108 Half Cut Cell</p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal4">Know More
+                    <span>&#10148;</span></button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Tapi Black - Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid mb-3">
+                    <h4 class="fw-bold">All Black Monocrystalline / Bi-Facial Monocrystalline</h4>
+                    <p>400 – 420 W</p>
+                    <p><strong>Product Warranty:</strong> 12 Years</p>
+                    <p><strong>Linear Performance Warranty:</strong> 30 Years</p>
+                    <p><strong>Module Efficiency:</strong> 21.50%</p>
+                    <p>108 Half Cut Cell</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">MODULE TYPE</th>
+                                <th scope="col">400</th>
+                                <th scope="col">405</th>
+                                <th scope="col">410</th>
+                                <th scope="col">415</th>
+                                <th scope="col">420</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Capacity rating – Pmax (Wp)</td>
+                                <td>400</td>
+                                <td>405</td>
+                                <td>410</td>
+                                <td>415</td>
+                                <td>420</td>
+                            </tr>
+                            <tr>
+                                <td>Power Tolerance (Wp)</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                                <td>0-4.99</td>
+                            </tr>
+                            <tr>
+                                <td>Open circuit voltage – Voc(V)</td>
+                                <td>38.57</td>
+                                <td>38.74</td>
+                                <td>38.95</td>
+                                <td>39.12</td>
+                                <td>39.31</td>
+                            </tr>
+                            <tr>
+                                <td>Short circuit current – Isc(A)</td>
+                                <td>13.33</td>
+                                <td>13.42</td>
+                                <td>13.5</td>
+                                <td>13.58</td>
+                                <td>13.66</td>
+                            </tr>
+                            <tr>
+                                <td>Rated voltage – Vmp(V)</td>
+                                <td>31.47</td>
+                                <td>31.64</td>
+                                <td>31.85</td>
+                                <td>32.02</td>
+                                <td>32.21</td>
+                            </tr>
+                            <tr>
+                                <td>Rated current – Imp(A)</td>
+                                <td>12.72</td>
+                                <td>12.8</td>
+                                <td>12.88</td>
+                                <td>12.96</td>
+                                <td>13.04</td>
+                            </tr>
+                            <tr>
+                                <td>Module efficiency (%)</td>
+                                <td>20.49</td>
+                                <td>20.73</td>
+                                <td>21</td>
+                                <td>21.24</td>
+                                <td>21.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container product-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="text-muted">Ganga</p>
+                <p>120 – 125 W</p>
+                <p><strong>Product Warranty:</strong> 10 Years</p>
+                <p><strong>Module Efficiency:</strong> 19.91%</p>
+                <p>33 Half Cut Cell</p>
+                <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#productModal5">Know More
+                    <span>&#10148;</span></button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Ganga - Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Tapi-TransSOLEX-1920X920_1-100.jpg" alt="Solar Panel" class="img-fluid mb-3">
+                    <p>120 – 125 W</p>
+                    <p><strong>Product Warranty:</strong> 10 Years</p>
+                    <p><strong>Module Efficiency:</strong> 19.91%</p>
+                    <p>33 Half Cut Cell</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Module Name</th>
+                                <th scope="col">Cell Count</th>
+                                <th scope="col">Power Output</th>
+                                <th scope="col">Efficiency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ganga-120</td>
+                                <td>33 Half-Cell</td>
+                                <td>120W</td>
+                                <td>Up to 19.12%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Expertise -->
+
+    <div class="container">
+        <section class="expertise-01">
+            <h2>Our Expertise</h2>
+            <p>At Solar Energy, we lead the industry with a perfect blend of technological innovation, precision
+                manufacturing, and comprehensive EPC services.</p>
+            <div><strong>Solar Technology Innovation:</strong> Delivering high-performance, reliable solar solutions.
+            </div>
+            <div><strong>Quality Manufacturing:</strong> Precision-built solar modules to ensure top-tier performance.
+            </div>
+            <div><strong>EPC Management:</strong> Efficient project execution and coordination.</div>
+            <div><strong>Customization & Scalability:</strong> Tailored solutions for various needs.</div>
+        </section>
+    </div>
+
+    <!-- Team Member -->
+
+    <div class="container team-section">
+        <h2 class="mb-5">Meet Our Team</h2>
+        <div class="row">
+            <!-- Team Member 1 -->
+            <div class="col-md-4">
+                <div class="card team-card p-3">
+                    <img src="img/leader.webp" alt="Member" class="team-img">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text text-muted">Web Developer</p>
+                        <div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
+                            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-4">
+                <div class="card team-card p-3">
+                    <img src="img/profile-pic_anil.webp" alt="Member" class="team-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text text-muted">UI/UX Designer</p>
+                        <div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
+                            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-md-4">
+                <div class="card team-card p-3">
+                    <img src="img/profile-pic_kalpesh.webp" alt="Member" class="team-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Mark Wilson</h5>
+                        <p class="card-text text-muted">Project Manager</p>
+                        <div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
+                            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="col-md-4">
+                <div class="card team-card p-3">
+                    <img src="img/profile-pic_piyush.webp" alt="Member" class="team-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Mark Wilson</h5>
+                        <p class="card-text text-muted">Project Manager</p>
+                        <div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
+                            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="col-md-4">
+                <div class="card team-card p-3">
+                    <img src="img/profile-pic_vipul.webp" alt="Member" class="team-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Mark Wilson</h5>
+                        <p class="card-text text-muted">Project Manager</p>
+                        <div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
+                            <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Powering a Greener Tomorrow</h3>
+                <p>Energy is a leader in solar technology, offering innovative, sustainable energy solutions tailored
+                    for residential, commercial, and industrial needs.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">EPC Projects</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p><strong>Corporate Office:</strong><br>301-303, Trinity Business Park, Near Madhuvan Circle, L.P.
+                    Savani Road, Pal, Surat – 395009, Gujarat, Bharat</p>
+                <p><strong>Registered Office:</strong><br>Plot No. 131/A, Phase – 1, H.M.Road, G.I.D.C., Vitthal
+                    Udyognagar, Anand-388121, Gujarat</p>
+                <p><strong>Phone:</strong> 0269 2230317</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><strong>Phone:</strong> 1800 572 8787</p>
+                <p><strong>Email:</strong> info@solex.in</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">Copyright © 2025 | Design & Developed by <span style="color: yellow;">Rioconn</span>
+            </p>
+            <p>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms & Conditions</a> |
+                <a href="#">Data Protection Policy</a> |
+                <a href="#">Privacy Policy for Application</a> |
+                <a href="#">Payment Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
